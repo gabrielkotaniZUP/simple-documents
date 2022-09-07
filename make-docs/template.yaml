@@ -36,5 +36,5 @@ hooks:
     encoding: utf-8
     changes:
       - yamlpath: "$"
-        append:
+        update:
           snippet: snippets/nav.yaml
