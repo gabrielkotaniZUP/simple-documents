@@ -35,6 +35,6 @@ hooks:
     indent: 4
     encoding: utf-8
     changes:
-      - yamlpath: "$"
+      - yamlpath: "$.nav"
         append:
           snippet: snippets/nav.yml
