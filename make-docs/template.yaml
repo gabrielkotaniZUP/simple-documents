@@ -5,7 +5,7 @@ types:
 inputs:
   - label: Project name
     type: text
-    name: project_name
+    name: name_project
     default: project-name
     required: true
   
@@ -21,17 +21,17 @@ hooks:
   - type: run
     trigger: after-render
     linux:
-      - mkdocs new {{inputs.project_name}}
-      - cd {{inputs.project_name}}
+      - mkdocs new {{inputs.name_project}}
+      - cd {{inputs.name_project}}
     windows:
-      - cmd /c mkdocs new {{inputs.project_name}}
-      - cmd /c cd {{inputs.project_name}}
+      - cmd /c mkdocs new {{inputs.name_project}}
+      - cmd /c cd {{inputs.name_project}}
     mac:
-      - mkdocs new {{inputs.project_name}}
+      - mkdocs new {{inputs.name_project}}
       - pwd
       - ls
-      - cp README.md {{inputs.project_name}}/docs
-      - cd {{inputs.project_name}}
+      - cp README.md {{inputs.name_project}}/docs
+      - cd {{inputs.name_project}}
       - pwd
       - ls
       - cd docs
