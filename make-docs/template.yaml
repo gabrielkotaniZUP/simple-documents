@@ -1,0 +1,40 @@
+name: make-docs
+description: Create simple documentation HTML pages for your project using markdown language.
+types:
+  - app-template
+inputs:
+  - label: Project name
+    type: text
+    name: project_name
+    default: project-name
+  
+hooks:
+  - type: run
+    trigger: after-render
+    command: 
+      - pwd
+      - ls
+      - cd ..
+      - pwd
+      - ls
+      - cd ..
+      - pwd
+      - ls
+  # - type: run
+  #   trigger: after-render
+  #   linux:
+  #     - pip install --no-cache-dir -r requirements.txt
+  #   windows:
+  #     - cmd /c pip install --no-cache-dir -r requirements.txt
+  #   mac:
+  #     - pip install --no-cache-dir -r requirements.txt
+  # - type: run
+  #   trigger: after-render
+  #   linux:
+  #     - mkdocs new {{inputs.project_name}}
+  #     - cd {{inputs.project_name}}
+  #   windows:
+  #     - cmd /c mkdocs new {{inputs.project_name}}
+  #     - cmd /c cd {{inputs.project_name}}
+  #   mac:
+  #     - mkdocs new {{inputs.project_name}}
