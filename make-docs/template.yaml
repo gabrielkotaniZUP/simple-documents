@@ -32,10 +32,12 @@ hooks:
   - type: edit-yaml
     trigger: after-render
     path: "{{name_project}}/mkdocs.yml"
-    indent: 2
+    indent: 4
     encoding: utf-8
     changes:
-      - yamlpath: "$.nav"
+      - yamlpath: "$"
         update:
           value: 
-            About: README.md   
+            nav:
+              Home: index.md
+              About: README.md   
