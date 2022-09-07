@@ -35,6 +35,6 @@ hooks:
     indent: 4
     encoding: utf-8
     changes:
-      - yamlpath: "$"
+      - yamlpath: "$.site_url"
         append:
           site_url: https://example.com/
