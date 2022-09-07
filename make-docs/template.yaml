@@ -28,21 +28,4 @@ hooks:
       - cmd /c cd {{name_project}}
     mac:
       - mkdocs new medocs #"{{name_project}}"
-      # - pwd
-      # - ls
-      # # - cp README.md {{name_project}}/docs
-      - cd medocs #{{name_project}}
-      - pwd
-      - ls
-      # - cd docs
-      # - pwd
-      # - ls
-
-  - type: run
-    trigger: after-render
-    linux:
-      - pip install --no-cache-dir -r home/requirements.txt
-    windows:
-      - pip install --no-cache-dir -r home/requirements.txt
-    mac:
-      - pip install --no-cache-dir -r home/requirements.txt
+      - cp README.md {{name_project}}/docs
