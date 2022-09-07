@@ -28,16 +28,15 @@ hooks:
       - cmd /c cd {{name_project}}
     mac:
       - mkdocs new "{{name_project}}"
-      - pwd
-      - ls
-      # - cp README.md {{name_project}}/docs
-      - sleep 10
+      # - pwd
+      # - ls
+      # # - cp README.md {{name_project}}/docs
       - cd "{{name_project}}"
       - pwd
       - ls
-      - cd docs
-      - pwd
-      - ls
+      # - cd docs
+      # - pwd
+      # - ls
 
   - type: run
     trigger: after-render
