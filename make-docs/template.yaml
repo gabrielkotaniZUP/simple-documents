@@ -36,8 +36,5 @@ hooks:
     encoding: utf-8
     changes:
       - yamlpath: "$"
-        update:
-          value: 
-            nav:
-              Home: index.md
-              About: README.md   
+        append:
+          snippet: snippets/nav.yml
