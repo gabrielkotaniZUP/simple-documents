@@ -31,7 +31,7 @@ hooks:
       - cp README.md {{name_project}}/docs
   - type: edit-yaml
     trigger: after-render
-    path: {{name_project}}/mkdocs.yml
+    path: "{{name_project}}"/mkdocs.yml
     indent: 2
     encoding: utf-8
     changes:
