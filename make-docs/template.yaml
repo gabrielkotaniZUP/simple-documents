@@ -10,32 +10,36 @@ inputs:
   
 hooks:
   - type: run
-    trigger: before-input
+    trigger: after-render
+    linux:
+      - pip install --no-cache-dir -r requirements.txt
+    windows:
+      - cmd /c pip install --no-cache-dir -r requirements.txt
     mac:
-        - pwd
-        - ls
-        - cd ..
-        - pwd
-        - ls
-        - cd ..
-        - pwd
-        - ls
-        - pip install --no-cache-dir -r home/requirementss.txt
-  # - type: run
-  #   trigger: after-render
-  #   linux:
-  #     - pip install --no-cache-dir -r requirements.txt
-  #   windows:
-  #     - cmd /c pip install --no-cache-dir -r requirements.txt
-  #   mac:
-  #     - pip install --no-cache-dir -r requirements.txt
-  # - type: run
-  #   trigger: after-render
-  #   linux:
-  #     - mkdocs new {{inputs.project_name}}
-  #     - cd {{inputs.project_name}}
-  #   windows:
-  #     - cmd /c mkdocs new {{inputs.project_name}}
-  #     - cmd /c cd {{inputs.project_name}}
-  #   mac:
-  #     - mkdocs new {{inputs.project_name}}
+      - pip install --no-cache-dir -r requirements.txt
+  - type: run
+    trigger: after-render
+    linux:
+      - mkdocs new {{inputs.project_name}}
+      - cd {{inputs.project_name}}
+    windows:
+      - cmd /c mkdocs new {{inputs.project_name}}
+      - cmd /c cd {{inputs.project_name}}
+    mac:
+      - mkdocs new {{inputs.project_name}}
+      - cp *.md {{inputs.project_name}}/docs
+      - cd {{inputs.project_name}}
+      - pwd
+      - ls
+      - cd docs
+      - pwd
+      -ls
+
+  - type: run
+    trigger: after-render
+    linux:
+      - pip install --no-cache-dir -r home/requirements.txt
+    windows:
+      - pip install --no-cache-dir -r home/requirements.txt
+    mac:
+      - pip install --no-cache-dir -r home/requirements.txt
