@@ -35,6 +35,6 @@ hooks:
     indent: 4
     encoding: utf-8
     changes:
-      - yamlpath: "$.nav"
-        update:
-          snippet: snippets/nav.yaml
+      - yamlpath: "$"
+        append:
+          site_url: https://example.com/
