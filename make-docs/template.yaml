@@ -27,7 +27,9 @@ hooks:
       - cmd /c cd {{inputs.project_name}}
     mac:
       - mkdocs new {{inputs.project_name}}
-      - cp *.md {{inputs.project_name}}/docs
+      - pwd
+      - ls
+      - cp README.md {{inputs.project_name}}/docs
       - cd {{inputs.project_name}}
       - pwd
       - ls
