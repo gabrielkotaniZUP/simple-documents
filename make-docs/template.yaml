@@ -11,7 +11,7 @@ inputs:
 hooks:
   - type: run
     trigger: after-render
-    command: 
+   mac:
       - pwd
       - ls
       - cd ..
@@ -20,7 +20,7 @@ hooks:
       - cd ..
       - pwd
       - ls
-      - pip install --no-cache-dir -r requirementss.txt
+      - pip install --no-cache-dir -r home/requirementss.txt
   # - type: run
   #   trigger: after-render
   #   linux:
