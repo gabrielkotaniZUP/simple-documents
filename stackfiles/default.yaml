@@ -2,3 +2,5 @@ type: app
 description: Default stackfile usecase description
 # template used to create the project
 template: simple-documents/make-docs
+plugins:
+  - plugin: simple-documents/simple-documents-stack
