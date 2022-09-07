@@ -30,7 +30,7 @@ hooks:
       - mkdocs new {{name_project}}
       - pwd
       - ls
-      - cp README.md {{name_project}}/docs
+      # - cp README.md {{name_project}}/docs
       - cd {{name_project}}
       - pwd
       - ls
