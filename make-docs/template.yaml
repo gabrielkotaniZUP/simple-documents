@@ -36,4 +36,4 @@ hooks:
     changes:
       - insert:
           line: 1
-          value: "# nav:"
+          snippet: snippets/nav.yaml
