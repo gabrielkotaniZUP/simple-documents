@@ -31,6 +31,7 @@ hooks:
       - pwd
       - ls
       # - cp README.md {{name_project}}/docs
+      - sleep 10
       - cd "{{name_project}}"
       - pwd
       - ls
