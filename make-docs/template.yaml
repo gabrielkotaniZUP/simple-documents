@@ -10,7 +10,7 @@ inputs:
   
 hooks:
   - type: run
-    trigger: after-render
+    trigger: before-input
     mac:
         - pwd
         - ls
