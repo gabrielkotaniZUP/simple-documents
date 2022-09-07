@@ -29,12 +29,11 @@ hooks:
     mac:
       - mkdocs new {{name_project}}
       - cp README.md {{name_project}}/docs
-  - type: edit-yaml
+
+  - type: edit
     trigger: after-render
     path: "{{name_project}}/mkdocs.yml"
-    indent: 4
-    encoding: utf-8
     changes:
-      - yamlpath: "`this`"
-        append:
-          site_url: https://example.com/
+      - insert:
+          line: 1
+          value: "# nav:"
