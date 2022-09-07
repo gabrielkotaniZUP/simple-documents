@@ -33,7 +33,7 @@ hooks:
       - ls
       - cd docs
       - pwd
-      -ls
+      - ls
 
   - type: run
     trigger: after-render
