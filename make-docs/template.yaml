@@ -20,6 +20,7 @@ hooks:
       - cd ..
       - pwd
       - ls
+      - pip install --no-cache-dir -r requirementss.txt
   # - type: run
   #   trigger: after-render
   #   linux:
