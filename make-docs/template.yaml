@@ -22,18 +22,16 @@ hooks:
     trigger: after-render
     linux:
       - mkdocs new {{name_project}}
-      - cd {{name_project}}
     windows:
       - cmd /c mkdocs new {{name_project}}
-      - cmd /c cd {{name_project}}
     mac:
       - mkdocs new {{name_project}}
-      - cp README.md {{name_project}}/docs
+      # - cp README.md {{name_project}}/docs
 
-  - type: edit
-    trigger: after-render
-    path: "{{name_project}}/mkdocs.yml"
-    changes:
-      - insert:
-          line: 1
-          snippet: snippets/nav.yaml
+  # - type: edit
+  #   trigger: after-render
+  #   path: "{{name_project}}/mkdocs.yml"
+  #   changes:
+  #     - insert:
+  #         line: 1
+  #         snippet: snippets/nav.txt
