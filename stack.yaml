@@ -2,7 +2,7 @@ description: Create and publish simple documents using markdown.
 name: simple-documents
 display-name: simple-documents
 picture: stack.png
-category: Full Stack # Ref: https://docs.stackspot.com/latest/docs/creators-guide/yaml/#category
+category: Backend # Ref: https://docs.stackspot.com/latest/docs/creators-guide/yaml/#category
 compatibility: # Put a list of technologies compatible with the stack
   - Python
 technologies: # Ref: https://docs.stackspot.com/latest/docs/creators-guide/yaml/#technologies 
